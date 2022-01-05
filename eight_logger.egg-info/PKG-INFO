@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: eight-logger
+Version: 0.1
+Summary: A Django app to manage logging
+Home-page: https://www.example.com
+Author: Sanip Rijal
+Author-email: saneprijal@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+License-File: LICENSE
+
+======================
+Eightlab Django Logger
+======================
+
+
+Eightlab Django Logger is a Django app to help simplify the logging activities.
+It creates log files for access, error, exception and info. 
+
+Dashboard
+---------
+
+The Eightlab Django Logger Dashboard helps in viewing detailed error statuses.
+
+Email
+-----
+
+The Eightlab Django Logger can also be configured to send email to recipients when exceptions occur.
+
+
+Quick start
+-----------
+
+1. Add "eight_logger" to your INSTALLED_APPS setting:
+
+    INSTALLED_APPS = [
+        ...
+        'eight_logger',
+        ...
+    ]
+
+2. Include the polls URLConf in your project urls.py like:
+    
+    path('eight_logger/', include('eight_logger.urls')),
+
+3. Run `python manage.py migrate` to create eight_logger models.
+
+
